@@ -8,6 +8,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 class ToDoListItem extends Component {
   handleCompleteClick = completeToDoId => {
+    console.log(completeToDoId);
     const { completeToDo } = this.props;
     completeToDo(completeToDoId);
   };
