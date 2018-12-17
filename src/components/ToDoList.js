@@ -52,6 +52,7 @@ class ToDoList extends Component {
   };
 
   renderToDos() {
+    console.log('DERP');
     const { data } = this.props;
     const toDos = _.map(data, (value) => {
       return <ToDoListItem key={value.id} todoId={value.id} todo={value.data()} />;
